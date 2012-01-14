@@ -1,14 +1,20 @@
 SampleApp::Application.routes.draw do
-  get "pages/home"
+  match '/home', :to => 'pages#home'
+  resources :home
+ # get "pages/home"
 
-  get "pages/contact"
+#  get "pages/contact"
   
-  get "pages/about"
+# get "pages/about"
   
-  get "pages/test2"
+#  get "pages/test2"
   
-  get "pages/help"
+#  get "pages/help"
 
+#  get "javascript/ip1_Resources/ip1_hype_generated_script"
+
+end  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -65,4 +71,4 @@ SampleApp::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
-end
+
