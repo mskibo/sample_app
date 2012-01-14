@@ -5,7 +5,7 @@ SampleApp::Application.routes.draw do
   
   get "pages/about"
   
-  get "pages/test"
+  get "pages/test2"
   
   get "pages/help"
 

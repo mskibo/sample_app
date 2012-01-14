@@ -56,9 +56,9 @@ end
        end
        end
 
-  describe "GET 'test page mike'" do
+  describe "GET 'test page mds'" do
     it"should be successful" do
-      get 'test'
+      get 'test2'
     end
   end
  
