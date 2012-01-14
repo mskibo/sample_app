@@ -1,2 +1,8 @@
 require 'autotest/growl'
 require 'autotest/fsevent'
+Autotest::Growl::show_modified_files = true
+Autotest::Growl::hide_label = true
+Autotest::Growl::remote_notification = true
+Autotest.add_hook :initialize do |at|
+  %w{.git .svn .hg .DS_Store ._* log}.each {|exception|at.add_exception(exception)}
+end
